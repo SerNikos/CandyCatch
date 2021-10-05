@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public GameObject liveHolder;
+    public GameObject gameOverPanel;
 
     int score;
     int lives = 3;
@@ -32,8 +33,12 @@ public class GameManager : MonoBehaviour
 
     public void IncrementScore()
     {
-        score++; //we increment the score
-        scoreText.text = score.ToString(); //and we convert it from int to text
+        if (!gameover)
+        {
+            score++; //we increment the score
+            scoreText.text = score.ToString(); //and we convert it from int to text
+        }
+     
        
     }
     public void DecriseLife()
@@ -44,7 +49,7 @@ public class GameManager : MonoBehaviour
             liveHolder.transform.GetChild(lives).gameObject.SetActive(false);
 
         }
-        else
+        else 
         {
             gameover = true;
             GameOver();
@@ -54,5 +59,8 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         print("GameOver");
+        CandySpawner.instance.StopSpawningCandies();
+        GameObject.Find("Player").GetComponent<PlayerController>().canMove = false;
+        gameOverPanel.SetActive(true);
     }
 }

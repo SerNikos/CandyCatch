@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: d8414370a428fbe46a5c204fab51258c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Funny & Cute
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 88eea69fa970a514885edd816dd21dc5, type: 3}
+  - {fileID: 12800000, guid: 9834207ba344c394283562c6bf65276c, type: 3}
+  - {fileID: 12800000, guid: 13f4873e0ccf33344967a8cc4f7e163b, type: 3}
+  - {fileID: 12800000, guid: bea6e9573fb04e64d82640493b69ade5, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
