@@ -21,6 +21,8 @@ public class CandyScript : MonoBehaviour
         {
             Destroy(gameObject);
             GameManager.instance.DecriseLife();
+
+            CameraShake.instance.Shake();
         }
     }
 }
